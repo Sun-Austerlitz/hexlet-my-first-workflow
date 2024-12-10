@@ -1,11 +1,8 @@
-name: "Hello World Workflow"
-
-on: [push]
+on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: "Run Hello World"
-      run: make say-hello
+    - run: make say-hello
